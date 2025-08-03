@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env
+
+# Node.js (Frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+
+# OS-specific
+.DS_Store
+
+# Python packaging
+*.egg-info/
+*.egg
+
+# VS Code
+.vscode/
+
+# Test & cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local config files
+*.local
