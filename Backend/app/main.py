@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from config import supabase
+from app import config
 
 app = FastAPI()
 
@@ -15,7 +15,7 @@ async def health_check():
 def test_supabase():
     # Just check if we can get the list of tables
     try:
-        data = supabase.table("testTable").select("*").limit(1).execute()
+        data = config.supabase.table("testTable").select("*").execute()
         return {"status": "success", "data": data.data}
     except Exception as e:
         return {"status": "error", "message": str(e)}
