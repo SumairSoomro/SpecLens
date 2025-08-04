@@ -1,6 +1,3 @@
-Got it ✅ — I’ll update the README so it clearly says which directory each command should be run from and when it doesn’t matter.
-
-Here’s your improved README.md:
 
 # SpecLens Backend
 
@@ -105,5 +102,3 @@ Backend/
 
 ---
 
-If you want, I can now **add a `.env` setup section** so that your backend is ready for database URLs and API keys before you even start coding them in.  
-Do you want me to do that?
