@@ -3,6 +3,8 @@
 
 This is the backend service for **SpecLens**, built with [FastAPI](https://fastapi.tiangolo.com/) and served using [Uvicorn](https://www.uvicorn.org/).
 
+## Contributors
+- @varun20020124
 ---
 
 ## 🚀 Getting Started
