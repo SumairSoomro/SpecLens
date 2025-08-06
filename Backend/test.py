@@ -10,7 +10,7 @@ def main():
     # Make sure these env vars are set in your shell:
     #   export PINECONE_API_KEY=…
     #   export PINECONE_INDEX_NAME=…
-    '''
+    
     user_id = "test_user"
     spec_id = "test_spec"
 
@@ -23,7 +23,7 @@ def main():
 
     count = ingest_spec(user_id, spec_id, raw_text)
     print(f"Ingested {count} chunks into namespace '{user_id}' for spec '{spec_id}'")
-    '''
+    
     user_id = "test_user"
     spec_id = "test_spec"
    

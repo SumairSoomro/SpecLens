@@ -16,7 +16,8 @@ def ingest_spec(user_id: str, spec_id: str, raw_text: str) -> int:
         "values":   embed_text(text),
         "metadata":{
           "user_id": user_id,
-          "spec_id": spec_id
+          "spec_id": spec_id,
+          "chunk_text": text
         }
       }
       for i, text in enumerate(chunks)
