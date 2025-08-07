@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app import config
+from app.routes.upload_spec import router as upload_spec_router
 
 app = FastAPI()
 
@@ -19,3 +20,6 @@ def test_supabase():
         return {"status": "success", "data": data.data}
     except Exception as e:
         return {"status": "error", "message": str(e)}
+    
+
+app.include_router(upload_spec_router)
