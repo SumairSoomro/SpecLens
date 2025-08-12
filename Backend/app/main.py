@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from app import config
 from app.routes.upload_spec import router as upload_spec_router
+from app.routes.ask import router as ask_router
 
 app = FastAPI()
 
@@ -23,3 +24,4 @@ def test_supabase():
     
 
 app.include_router(upload_spec_router)
+app.include_router(ask_router)

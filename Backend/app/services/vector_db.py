@@ -18,7 +18,7 @@ def query_chunks(
     query_emb: List[float],
     user_id: str,
     spec_id: Optional[str] = None,
-    top_k: int = 3
+    top_k: int = 5
 ) -> List[Dict]:
     """
     Retrieve the top_k most similar chunks for a query embedding.

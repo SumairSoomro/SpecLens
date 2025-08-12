@@ -13,7 +13,6 @@ def main():
     # Get user ID
     user_id = get_user_id_from_jwt(token)
 
-
 if __name__ == "__main__":
     main()
 

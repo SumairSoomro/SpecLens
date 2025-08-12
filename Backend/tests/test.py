@@ -13,7 +13,7 @@ def main():
     #   export PINECONE_API_KEY=…
     #   export PINECONE_INDEX_NAME=…
     
-    '''
+    
     user_id = "test_user"
     spec_id = "test_spec"
 
@@ -26,19 +26,18 @@ def main():
 
     count = ingest_spec(user_id, spec_id, raw_text)
     print(f"Ingested {count} chunks into namespace '{user_id}' for spec '{spec_id}'")
-    '''
-    user_id = "test_user"
-    spec_id = "test_spec"
-   
+    
+
     
     # 2) Query Pinecone with a snippet of that text
-    query_text = "adipiscing"
+    query_text = "vestibulum"
     resp = query_chunks(embed_text(query_text),user_id)
 
 
     print(f"\nTop 3 matches for query '{query_text}':")
     for match in resp:
         print(f"  id={match['id']}  score={match['score']:.4f}  metadata={match['spec_id']}")
+
 
 if __name__ == "__main__":
     main()

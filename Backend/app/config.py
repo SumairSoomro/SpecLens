@@ -2,6 +2,7 @@
 import os
 from supabase import create_client, Client
 from dotenv import load_dotenv
+from openai import OpenAI
 
 
 
@@ -21,3 +22,4 @@ JWKS_URL = f"{SUPABASE_URL}/auth/v1/.well-known/jwks.json"
 
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+OpenAIclient = OpenAI(api_key=OPENAI_API_KEY)
